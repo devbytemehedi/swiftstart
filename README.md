@@ -68,4 +68,4 @@ swiftstart
 ```
 ## License
 
-This project is opensource and licensed under the [MIT License](./LICENSE).
+The code is available under the [MIT](./LICENSE) license.
