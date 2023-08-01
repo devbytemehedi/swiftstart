@@ -31,6 +31,8 @@
 swiftstart
  ┣ .vscode
  ┃ ┗ settings.json
+ ┣ dist
+ ┃ ┗ style.css
  ┣ src
  ┃ ┣ assets
  ┃ ┃ ┣ data
@@ -54,15 +56,16 @@ swiftstart
  ┃ ┃ ┃ ┣ swiftstart-high-resolution-color-logo.svg
  ┃ ┃ ┃ ┗ swiftstart-high-resolution-logo-color-on-transparent-background.svg
  ┃ ┗ index.css
+ ┣ .gitattributes
  ┣ .gitignore
  ┣ 404.html
- ┣ gitattributes.txt
  ┣ index.html
  ┣ LICENSE
  ┣ package.json
  ┣ README.md
  ┣ robots.txt
  ┗ tailwind.config.js
+
 
 
 ```
