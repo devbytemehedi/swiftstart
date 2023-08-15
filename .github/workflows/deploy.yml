@@ -1,25 +1,27 @@
-name: Build Tailwind CSS
-
+name: Build and Deploy
+permissions:
+  contents: write
 on:
   push:
     branches:
-      - main # Change to your branch name if needed
-
+      - main
 jobs:
-  build:
-    runs-on: ubuntu-latest
+    deploy:
+      concurrency: ci-${{ github.ref }}
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout 🛎️
+          uses: actions/checkout@v3
 
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
+        - name: Install and Build 🔧
+          run: |
+            npm ci
+            npm run build
 
-      - name: Set Up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14 # Change to your desired Node.js version
-
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Build CSS
-        run: npm run build
+        - name: Deploy 🚀
+          uses: JamesIves/github-pages-deploy-action@v4
+          with:
+            branch: gh-pages
+            folder: |
+              src
+              dist
