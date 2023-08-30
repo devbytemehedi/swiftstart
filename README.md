@@ -25,40 +25,6 @@ npm run build
 - Click **Open with Live Server**.
 - Project should be up and running in your browser.
 
-## Folder Structure
-
-```scss
-swiftstart
- ├─ .vscode
- │ └─ settings.json
- ├─ dist
- │ └─ .gitkeep
- ├─ src
- │ ├─ assets
- │ │ ├─ favicons
- │ │ │ ├─ icon.png
- │ │ │ └─ icon.svg
- │ │ └─ logo
- │ │ │ ├─ logo-black.png
- │ │ │ ├─ logo-color.png
- │ │ │ ├─ logo-no-bg.png
- │ │ │ └─ logo-white.png
- │ ├─ js
- │ │ └─ index.js
- │ ├─ pages
- │ │ └─ .gitkeep
- │ ├─ index.html
- │ └─ input.css
- ├─ .gitattributes
- ├─ .gitignore
- ├─ index.html
- ├─ LICENSE
- ├─ package.json
- ├─ README.md
- ├─ robots.txt
- └─ tailwind.config.js
-```
-
 ## License
 
 The code is available under the [MIT](./LICENSE) license.
